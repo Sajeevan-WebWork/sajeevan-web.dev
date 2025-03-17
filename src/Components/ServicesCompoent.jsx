@@ -1,5 +1,6 @@
 import React from 'react'
 import Blog from '/blog-1.jpeg'
+import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 import { Code, Component, Cpu, Figma } from 'lucide-react'
 

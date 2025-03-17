@@ -1,17 +1,26 @@
 import React from 'react'
 import '../app.css'
+import { motion } from 'motion/react'
 
 
 const TextAnimateComponent = () => {
     return (
-        <div className='bg-custom px-6 py-4'>
-            <div class="marquee">
+        <motion.div
+            initial={{
+                width: "0%",
+            }}
+            animate={{
+                width: '100%',
+            }}
+            transition={{ type: "spring", stiffness: 50 }}
+            className='bg-custom px-6 py-4'>
+            <div className="marquee">
                 <span className='text-xs text-theme-600'>Latest work and <span className='text-theme-200'>features</span>. &nbsp;&nbsp;&nbsp;</span>
                 <span className='text-xs text-theme-600'>Latest work and <span className='text-theme-200'>features</span>. &nbsp;&nbsp;&nbsp;</span>
                 <span className='text-xs text-theme-600'>Latest work and <span className='text-theme-200'>features</span>. &nbsp;&nbsp;&nbsp;</span>
                 <span className='text-xs text-theme-600'>Latest work and <span className='text-theme-200'>features</span>. &nbsp;&nbsp;&nbsp;</span>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

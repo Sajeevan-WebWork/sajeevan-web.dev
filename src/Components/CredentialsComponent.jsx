@@ -1,11 +1,23 @@
 import React from 'react'
+import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 
 
 const CredentialsComponent = () => {
     return (
         <>
-            <div className="flex flex-col gap-6 bg-custom py-8 px-5">
+            <motion.div
+                initial={{
+                    y: -50,
+                    scale: .7
+                }}
+                animate={{
+                    y: 0,
+                    scale: 1
+                }}
+
+                transition={{ duration: .8, }}
+                className="flex flex-col gap-6 bg-custom py-8 px-5">
                 <div className="signature">
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/bg1.png" className='h-3/4 w-full object-cover' alt="signature" />
                 </div>
@@ -19,7 +31,7 @@ const CredentialsComponent = () => {
                         <img src={Icon} alt="" />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

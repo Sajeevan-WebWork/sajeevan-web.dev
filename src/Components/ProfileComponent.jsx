@@ -8,14 +8,14 @@ const ProfileComponent = () => {
       <motion.div
         initial={{
           y: -50,
-          scale: .9
+          scale: .7
         }}
         animate={{
           y: 0,
           scale: 1
         }}
 
-        transition={{ duration: .3, }}
+        transition={{ duration: .8, }}
 
         className="bg-custom  md:py-[50px] md:px-[46px] p-6">
         <div className="grid sm:grid-cols-2 items-center gap-10 md:gap-6">

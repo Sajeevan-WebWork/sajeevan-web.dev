@@ -13,6 +13,7 @@ import ExperienceComponent from '../../Components/ExperienceComponent'
 const HomePage = () => {
   return (
     <>
+    {/* *************--------------********* */}
       <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-6">
         <Link className="profile__card">
           <ProfileComponent />
@@ -20,9 +21,9 @@ const HomePage = () => {
 
 
         <div className="profile__details grid grid-cols-1 gap-4 items-start">
-          <Link className="text_scrolling w-full">
+          <div className="text_scrolling w-full cursor-default">
             <TextAnimateComponent />
-          </Link>
+          </div>
 
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6">
@@ -39,7 +40,7 @@ const HomePage = () => {
         </div>
       </div>
 
-
+    {/* *************--------------********* */}
 
       <div className="grid lg:grid-cols-4 lg:grid-rows-1 gap-6 mt-6">
         <Link className='sm:col-start-1 sm:col-span-1 col-span-2'>
@@ -56,10 +57,7 @@ const HomePage = () => {
 
       </div>
 
-
-
-
-
+    {/* *************--------------********* */}
 
       <div className="grid lg:grid-cols-2 gap-10 mt-6">
         <div>

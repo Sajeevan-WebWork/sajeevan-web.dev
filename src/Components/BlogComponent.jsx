@@ -1,5 +1,6 @@
 import Blog from '/blog-1.jpeg'
 import Icon from '/icon.svg'
+import { motion } from 'motion/react'
 import React from 'react'
 
 const BlogComponent = () => {

@@ -1,6 +1,7 @@
 import React from 'react'
 import Icon from '/icon.svg'
 import Icon1 from '/icon-1.png'
+import { motion } from 'motion/react'
 import '../app.css'
 
 const WorkTogetherComponent = () => {
