@@ -1,0 +1,54 @@
+@-webkit-keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.marquee span {
+    text-transform: uppercase;
+    will-change: transform;
+    transform: translateX(0);
+    white-space: nowrap;
+    animation: marquee 2s linear infinite;
+    font-family: "Gravitas One", Helvetica, Arial, sans-serif;
+}
+
+.social__media__icon {
+    cursor: pointer;
+    border-radius: 30px;
+    background: #0F0F0F;
+    border: 1px solid #ffffff10;
+    /* background: linear-gradient(120deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05)); */
+    /* background: linear-gradient(120deg, #ffffff4d, #ffffff0d); */
+
+    &:hover {
+        background: #ffffff !important;
+        cursor: pointer;
+    }
+}
+
+
+.WorkTogetherComponent {
+    
+}

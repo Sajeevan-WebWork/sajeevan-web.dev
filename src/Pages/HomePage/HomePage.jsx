@@ -1,0 +1,77 @@
+import React from 'react'
+import ProfileComponent from '../../Components/ProfileComponent'
+import CredentialsComponent from '../../Components/CredentialsComponent'
+import ProjectComponent from '../../Components/ProjectComponent'
+import TextAnimateComponent from '../../Components/TextAnimateComponent'
+import { Link } from 'react-router-dom'
+import BlogComponent from '../../Components/BlogComponent'
+import ServicesCompoent from '../../Components/ServicesCompoent'
+import SocialProfileComponet from '../../Components/SocialProfileComponet'
+import WorkTogetherComponent from '../../Components/WorkTogetherComponent'
+import ExperienceComponent from '../../Components/ExperienceComponent'
+
+const HomePage = () => {
+  return (
+    <>
+      <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-6">
+        <Link className="profile__card">
+          <ProfileComponent />
+        </Link>
+
+
+        <div className="profile__details grid grid-cols-1 gap-4 items-start">
+          <Link className="text_scrolling w-full">
+            <TextAnimateComponent />
+          </Link>
+
+
+          <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6">
+            <Link className="Credentials">
+              <CredentialsComponent />
+            </Link>
+
+
+            <Link className="projects">
+              <ProjectComponent />
+            </Link>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="grid lg:grid-cols-4 lg:grid-rows-1 gap-6 mt-6">
+        <Link className='sm:col-start-1 sm:col-span-1 col-span-2'>
+          <BlogComponent />
+        </Link>
+
+        <Link className="col-span-2 lg:col-start-2 row-start-1">
+          <ServicesCompoent />
+        </Link>
+
+        <div className="sm:col-start-2 lg:col-start-4 lg:row-start-1 sm:col-span-1 col-span-2">
+          <SocialProfileComponet />
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div className="grid lg:grid-cols-2 gap-10 mt-6">
+        <div>
+          <ExperienceComponent />
+        </div>
+        <Link>
+          <WorkTogetherComponent />
+        </Link>
+      </div>
+
+    </>
+  )
+}
+
+export default HomePage
