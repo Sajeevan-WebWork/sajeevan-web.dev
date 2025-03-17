@@ -98,7 +98,7 @@ const NavBar = () => {
 
         <div className="flex items-center gap-4">
           <motion.button
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.85 }}
           >
             <Link
               whileTap={{ scale: 0.95 }}
