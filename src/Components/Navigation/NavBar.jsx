@@ -4,96 +4,59 @@ import { motion } from 'motion/react'
 import weblogo from '/logo.svg'
 import { LayoutDashboard, X } from 'lucide-react'
 
+
 const NavBar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
+  const navMenuItems = [
+    { link: "Home", path: "/" },
+    { link: "About", path: "/about" },
+    { link: "Works", path: "/works" },
+    { link: "Contact", path: "/contact" }
+  ];
+  console.log(navMenuItems);
 
   return (
     <>
       <header className="flex items-center justify-between py-8 px-4">
-        <Link to={'/'} className="logo z-100">
+
+        <Link to={'/'} className="logo z-100" onClick={() => setNavOpen(!isNavOpen)}>
           <img src={weblogo} alt="web logo" className='w-20 z-50 relative' />
         </Link>
 
+
+        {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-14">
+          {
+            navMenuItems.map((item, index) => (
+              <NavLink
+                key={index}
+                to={item.path}
+                className={({ isActive }) =>
+                  `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
+                }
+              >
+                {item.link}
+              </NavLink>
+            ))
+          }
 
-          <NavLink
-            to={'/'}
-            className={({ isActive }) =>
-              `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to={'/about'}
-            className={({ isActive }) =>
-              `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to={'/works'}
-            className={({ isActive }) =>
-              `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
-            }
-          >
-            Works
-          </NavLink>
-
-          <NavLink
-            to={'/contact'}
-            className={({ isActive }) =>
-              `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
-            }
-          >
-            Contact
-          </NavLink>
         </nav>
 
-        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-full mobile__nav w-full items-center gap-14 transition-all duration-700 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
 
-          <NavLink
-            to={'/'}
-            onClick={() => setNavOpen(!isNavOpen)}
-            className={({ isActive }) =>
-              `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`
-            }
-          >
-            Home
-          </NavLink>
+        {/* Mobile nav */}
+        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-screen h-min mobile__nav w-full items-center gap-14 transition-all duration-700 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
 
-          <NavLink
-            to={'/about'}
-            onClick={() => setNavOpen(!isNavOpen)}
-            className={({ isActive }) =>
-              `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to={'/works'}
-            onClick={() => setNavOpen(!isNavOpen)}
-            className={({ isActive }) =>
-              `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`
-            }
-          >
-            Works
-          </NavLink>
-
-          <NavLink
-            to={'/contact'}
-            onClick={() => setNavOpen(!isNavOpen)}
-            className={({ isActive }) =>
-              `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`
-            }
-          >
-            Contact
-          </NavLink>
+          {
+            navMenuItems.map((item, index) => (
+              <NavLink
+                key={index}
+                to={item.path}
+                onClick={() => setNavOpen(!isNavOpen)}
+                className={({ isActive }) => `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`} >
+                {item.link}
+              </NavLink>
+            ))
+          }
         </nav>
 
         <div className="flex items-center gap-4">
@@ -102,7 +65,7 @@ const NavBar = () => {
           >
             <Link
               whileTap={{ scale: 0.95 }}
-              className='rounded-md bg-[#323232] capitalize z-50 hover:bg-theme-900 hover:rounded-2xl transition-all text-white px-6 py-2' to={'/contact'}>let's talk
+              className='rounded-md bg-[#323232] capitalize z-50 hover:bg-theme-900 hover:rounded-2xl transition-all text-white px-6 py-3 ' to={'/contact'}>let's talk
             </Link>
           </motion.button>
           {
@@ -116,6 +79,7 @@ const NavBar = () => {
           }
 
         </div>
+
       </header>
     </>
   )

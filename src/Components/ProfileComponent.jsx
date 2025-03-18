@@ -25,7 +25,7 @@ const ProfileComponent = () => {
           <div className="flex flex-col relative">
             <small className='text-xs font-medium text-theme-300 uppercase'>A Frontend developer</small>
             <h3 className='text-[36px] font-[500] leading-10 py-2'>Sajeevan Balsingam</h3>
-            <p className='text-base font-light text-theme-300'>I am a Web Designer based in san francisco.</p>
+            <p className='text-base font-light text-theme-300'>I am a Frontend developer based in chennai, India.</p>
             <i className='absolute right-0 -bottom-0 sm:-bottom-5 md:-bottom-20 lg:-bottom-15 text-theme-400'>
               <img src={Icon} alt="" />
             </i>

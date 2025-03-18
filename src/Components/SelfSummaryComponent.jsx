@@ -10,7 +10,7 @@ const SelfSummaryComponent = () => {
                 <span>
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="" />
                 </span>
-                <h1 className='text-4xl sm:text-5xl lg:text-7xl  font-medium uppercase'>Self-summary</h1>
+                <h1 className='text-4xl sm:text-5xl lg:text-7xl font-bold uppercase text-white'>Self-summary</h1>
                 <span>
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="" />
                 </span>

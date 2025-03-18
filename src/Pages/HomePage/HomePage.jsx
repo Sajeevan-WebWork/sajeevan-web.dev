@@ -13,7 +13,7 @@ import ExperienceComponent from '../../Components/ExperienceComponent'
 const HomePage = () => {
   return (
     <>
-    {/* *************--------------********* */}
+      {/* *************--------------********* */}
       <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-6">
         <Link className="profile__card">
           <ProfileComponent />
@@ -27,12 +27,12 @@ const HomePage = () => {
 
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6">
-            <Link className="Credentials">
+            <Link to={'/about'} className="Credentials">
               <CredentialsComponent />
             </Link>
 
 
-            <Link className="projects">
+            <Link to={'/works'} className="projects">
               <ProjectComponent />
             </Link>
 
@@ -40,7 +40,7 @@ const HomePage = () => {
         </div>
       </div>
 
-    {/* *************--------------********* */}
+      {/* *************--------------********* */}
 
       <div className="grid lg:grid-cols-4 lg:grid-rows-1 gap-6 mt-6">
         <Link className='sm:col-start-1 sm:col-span-1 col-span-2'>
@@ -57,13 +57,13 @@ const HomePage = () => {
 
       </div>
 
-    {/* *************--------------********* */}
+      {/* *************--------------********* */}
 
       <div className="grid lg:grid-cols-2 gap-10 mt-6">
         <div>
           <ExperienceComponent />
         </div>
-        <Link>
+        <Link to={'/contact'}>
           <WorkTogetherComponent />
         </Link>
       </div>
