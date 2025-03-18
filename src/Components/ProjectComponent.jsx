@@ -9,17 +9,19 @@ const ProjectComponent = () => {
       <motion.div
         initial={{
           y: -50,
-          scale: .7
+          scale: .7,
+          opacity: 0
         }}
         animate={{
           y: 0,
-          scale: 1
+          scale: 1,
+          opacity: 2
         }}
 
         transition={{ duration: .8, }}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="signature">
-          <img src={Project1} alt="Project1" className='rounded-lg h-2/3 w-full object-cover' />
+          <img src={Project1} alt="Project1" className='rounded-lg h-2/3 w-full object-cover' loading='lazy' />
         </div>
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-2">
@@ -28,7 +30,7 @@ const ProjectComponent = () => {
           </div>
 
           <div className="icon">
-            <img src={Icon} alt="" />
+            <img src={Icon} alt="icon" loading='lazy' />
           </div>
         </div>
       </motion.div>

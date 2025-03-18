@@ -19,8 +19,8 @@ const NavBar = () => {
     <>
       <header className="flex items-center justify-between py-8 px-4">
 
-        <Link to={'/'} className="logo z-100" onClick={() => setNavOpen(!isNavOpen)}>
-          <img src={weblogo} alt="web logo" className='w-20 z-50 relative' />
+        <Link to={'/'} className="logo z-100" onClick={() => setNavOpen(false)}>
+          <img src={weblogo} alt="web logo" loading='lazy' className='w-20 z-50 relative' />
         </Link>
 
 
@@ -44,7 +44,7 @@ const NavBar = () => {
 
 
         {/* Mobile nav */}
-        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-screen h-min mobile__nav w-full items-center gap-14 transition-all duration-700 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
+        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-screen h-min mobile__nav w-full items-center gap-14 transition-all duration-400 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
 
           {
             navMenuItems.map((item, index) => (
@@ -59,7 +59,7 @@ const NavBar = () => {
           }
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-8">
           <motion.button
             whileTap={{ scale: 0.85 }}
           >

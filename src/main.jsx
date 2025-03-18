@@ -7,6 +7,8 @@ import HomePage from './Pages/HomePage/HomePage.jsx'
 import AboutPage from './Pages/AboutPage/AboutPage.jsx'
 import Works from './Pages/WorksPage/Works.jsx'
 import Contact from './Pages/ContactPage/Contact.jsx'
+import ServiceOfferings from './Pages/ServicePage/ServiceOfferings.jsx'
+import Credential from './Pages/CredentialPage/Credential.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <HomePage />
+        element: <HomePage />,
       },
 
       {
@@ -33,12 +35,16 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />
       },
-    ]
-  },
+      {
+        path: "/service",
+        element: <ServiceOfferings />
+      },
 
-  {
-    path: '/about',
-    element: <AboutPage />
+      {
+        path: "/credential",
+        element: <Credential />
+      }
+    ]
   },
 
 ])

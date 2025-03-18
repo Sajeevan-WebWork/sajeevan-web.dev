@@ -55,3 +55,23 @@
     line-height: 1.5;
     padding-top: 20px;
 }
+
+.form__input {
+    width: 100%;
+    border: none;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+    border-radius: 10px;
+    font-size: 14px;
+    display: block;
+    color: #fff;
+}
+
+.form__input:focus {
+    border: none;
+    outline: none;
+}
+
+.form__input::placeholder {
+    font-size: 1rem;
+    text-transform: capitalize;
+}

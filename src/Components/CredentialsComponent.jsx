@@ -20,7 +20,7 @@ const CredentialsComponent = () => {
                 transition={{ duration: .8, }}
                 className="flex flex-col gap-6 bg-custom py-8 px-5">
                 <div className="signature">
-                    <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature" />
+                    <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature"  loading='lazy'/>
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ const CredentialsComponent = () => {
                     </div>
 
                     <div className="icon">
-                        <img src={Icon} alt="" />
+                        <img src={Icon} alt="icon" loading='lazy' />
                     </div>
                 </div>
             </motion.div>

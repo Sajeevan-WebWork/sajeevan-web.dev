@@ -8,14 +8,27 @@ import '../app.css'
 
 const SocialProfileComponet = () => {
   return (
-    <div className="flex flex-col gap-6 bg-custom px-5 pb-6">
+    <motion.div
+      initial={{
+        y: -50,
+        scale: .7,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        scale: 1,
+        opacity: 2
+      }}
+
+      transition={{ duration: .8, }}
+      className="flex flex-col gap-6 bg-custom px-5 pb-6">
       <div className="social__media flex items-center py-8 px-4 flex-wrap justify-around mt-5 mb-5 bg-custom gap-2">
-        <Link to={'https://github.com/Sajeevan-WebWork'} target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
+        <a href="https://github.com/Sajeevan-WebWork" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
           <Github size={30} className='group-hover:text-black transition-all duration-700' />
-        </Link>
-        <Link to={'https://www.linkedin.com/in/sajeevan-frontend-dev/'} target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
+        </a>
+        <a href="https://www.linkedin.com/in/sajeevan-frontend-dev/" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
           <Linkedin size={30} className='group-hover:text-black transition-all duration-700' />
-        </Link>
+        </a>
       </div>
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-2">
@@ -24,10 +37,10 @@ const SocialProfileComponet = () => {
         </div>
 
         <div className="icon">
-          <img src={Icon} alt="" />
+          <img src={Icon} alt="icon" loading='lazy' />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

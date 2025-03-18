@@ -5,10 +5,23 @@ import React from 'react'
 
 const BlogComponent = () => {
   return (
-    <div>
-      <div className="flex flex-col gap-6 bg-custom py-8 px-5">
+    <>
+      <motion.div
+        initial={{
+          y: -50,
+          scale: .7,
+          opacity: 0
+        }}
+        animate={{
+          y: 0,
+          scale: 1,
+          opacity: 2
+        }}
+
+        transition={{ duration: .8, }}
+        className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="signature">
-          <img src={Blog} alt="Blog" className='rounded-lg h-2/3 object-cover w-full' />
+          <img src={Blog} alt="Blog" className='rounded-lg h-2/3 object-cover w-full' loading='lazy' />
         </div>
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-2">
@@ -17,11 +30,11 @@ const BlogComponent = () => {
           </div>
 
           <div className="icon">
-            <img src={Icon} alt="" />
+            <img src={Icon} alt="icon" loading='lazy' />
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </>
   )
 }
 

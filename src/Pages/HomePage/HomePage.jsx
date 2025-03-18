@@ -27,7 +27,7 @@ const HomePage = () => {
 
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-2 gap-6">
-            <Link to={'/about'} className="Credentials">
+            <Link to={'/credential'} className="Credentials">
               <CredentialsComponent />
             </Link>
 
@@ -47,7 +47,7 @@ const HomePage = () => {
           <BlogComponent />
         </Link>
 
-        <Link className="col-span-2 lg:col-start-2 row-start-1">
+        <Link to={'/service'} className="col-span-2 lg:col-start-2 row-start-1">
           <ServicesCompoent />
         </Link>
 
