@@ -8,16 +8,20 @@ import WorkTogetherComponent from '../../Components/WorkTogetherComponent'
 import { motion } from 'motion/react'
 import CredentialsComponent from '../../Components/CredentialsComponent'
 import { fadeInUp } from '../../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 
 const AboutPage = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <div>
 
       <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows-1 gap-10">
         <motion.div
 
-          {...fadeInUp}
+          initial={fadeInUp.initial}
+          animate={fadeInUp.animate}
+          transition={fadeInUp.transition({ isMobile })}
           className='bg-custom p-6'>
           <img className='h-4/4   object-cover rounded-2xl w-full' src={'/Profile.JPG'} alt="Profile image" loading='lazy' />
         </motion.div>

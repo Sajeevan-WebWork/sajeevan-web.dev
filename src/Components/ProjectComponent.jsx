@@ -3,11 +3,15 @@ import Icon from '/icon.svg'
 import Project1 from '/Project.avif'
 import { motion } from 'motion/react'
 import React from 'react'
+import { useMediaQuery } from 'react-responsive';
 
 const ProjectComponent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <>
-      <motion.div {...fadeInUp}
+      <motion.div initial={fadeInUp.initial}
+        animate={fadeInUp.animate}
+        transition={fadeInUp.transition({ isMobile })}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="signature">
           <img src={Project1} alt="Project1" className='rounded-lg h-2/3 w-full object-cover' loading='lazy' />

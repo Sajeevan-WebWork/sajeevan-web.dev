@@ -4,10 +4,14 @@ import Icon1 from '/icon-1.png'
 import { motion } from 'motion/react'
 import '../app.css'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 const SelfSummaryComponent = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     return (
         <motion.div
-            {...fadeInUp}>
+            initial={fadeInUp.initial}
+            animate={fadeInUp.animate}
+            transition={fadeInUp.transition({ isMobile })}>
             <div className="flex items-center">
                 <span>
                     <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="vector icon" loading='lazy' />

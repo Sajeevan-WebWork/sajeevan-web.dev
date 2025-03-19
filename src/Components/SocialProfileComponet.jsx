@@ -6,11 +6,15 @@ import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import '../app.css'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 const SocialProfileComponet = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <motion.div
-      {...fadeInUp}
+      initial={fadeInUp.initial}
+      animate={fadeInUp.animate}
+      transition={fadeInUp.transition({ isMobile })}
       className="flex flex-col gap-6 bg-custom px-5 pb-6">
       <div className="social__media flex items-center py-8 px-4 flex-wrap justify-around mt-5 mb-5 bg-custom gap-2">
         <a href="https://github.com/Sajeevan-WebWork" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">

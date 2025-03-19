@@ -1,4 +1,6 @@
 import { delay } from "motion";
+import { useMediaQuery } from "react-responsive";
+
 
 export const fadeInUp = {
     initial: {
@@ -11,10 +13,11 @@ export const fadeInUp = {
         scale: 1,
         opacity: 1, // (opacity maxes at 1)
     },
-    // transition: { delay: .1 },
-    // transition: { type: "spring", stiffness: 300, damping: 30 }
-    // transition: { type: "tween", duration: 0.5, ease: "easeInOut" }
-
-
-
+    // Detect if the screen size is mobile
+    transition: ({ isMobile }) => ({
+        type: "spring",
+        stiffness: 300,
+        damping: 15,
+        delay: isMobile ? 0.3 : .2, // Apply delay based on mobile detection
+    }),
 };

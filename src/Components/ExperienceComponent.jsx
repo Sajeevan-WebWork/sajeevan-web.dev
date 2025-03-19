@@ -1,12 +1,16 @@
 import { motion } from 'motion/react'
 import React from 'react'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 const ExperienceComponent = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     return (
         <>
             <motion.div
-                {...fadeInUp}
+                initial={fadeInUp.initial}
+                animate={fadeInUp.animate}
+                transition={fadeInUp.transition({ isMobile })}
                 className="bg-custom py-8 px-6 flex flex-wrap items-center justify-around gap-6">
                 <div className="flex flex-col items-center gap-2 bg-custom p-6 md:p-6 xl:p-8">
                     <h2 className='text-3xl font-[600]'>3.8</h2>

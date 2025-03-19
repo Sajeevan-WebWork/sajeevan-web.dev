@@ -4,13 +4,17 @@ import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 import { Code, Component, Cpu, Figma } from 'lucide-react'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 const ServicesCompoent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <>
 
       <motion.div
-        {...fadeInUp}
+        initial={fadeInUp.initial}
+        animate={fadeInUp.animate}
+        transition={fadeInUp.transition({ isMobile })}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="services_list flex items-center justify-around md:mt-14 md:mb-10 my-6">
           <Code size={34} />

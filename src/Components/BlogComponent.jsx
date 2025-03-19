@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive'
 import { fadeInUp } from '../lib/FramerMotion'
 import Blog from '/blog-1.jpeg'
 import Icon from '/icon.svg'
@@ -5,10 +6,13 @@ import { motion } from 'motion/react'
 import React from 'react'
 
 const BlogComponent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <>
       <motion.div
-        {...fadeInUp}
+        initial={fadeInUp.initial}
+        animate={fadeInUp.animate}
+        transition={fadeInUp.transition({ isMobile })}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="signature">
           <img src={Blog} alt="Blog" className='rounded-lg h-2/3 object-cover w-full' loading='lazy' />

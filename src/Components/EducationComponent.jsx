@@ -1,11 +1,15 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 const EducationComponent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <motion.div
-      {...fadeInUp}
+      initial={fadeInUp.initial}
+      animate={fadeInUp.animate}
+      transition={fadeInUp.transition({ isMobile })}
       className="bg-custom p-6">
       <h5 className='text-xl font-[600] pb-6'>Education</h5>
       <div className="flex flex-col gap-4">

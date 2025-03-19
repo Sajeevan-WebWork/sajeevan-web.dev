@@ -15,7 +15,7 @@ const HomePage = () => {
     <>
       {/* *************--------------********* */}
       <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-6">
-        <Link to={'/about'} className="profile__card">
+        <Link to={'/about'} className="profile__card ">
           <ProfileComponent />
         </Link>
 

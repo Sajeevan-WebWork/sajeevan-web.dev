@@ -14,6 +14,32 @@
     --color-theme-950: #0f0f0f;
 }
 
+
+
+@font-face {
+    font-family: 'aquraium';
+    src: url('/Fonts/AQUARIUM.ttf') format('truetype');
+    /* Path relative to the public folder */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'future-font';
+    src: url('/Fonts/OTHER-FUTURE.ttf') format('truetype');
+    /* Path relative to the public folder */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Set the default font to MyCustomFont for the whole app */
+.font-custom {
+    /* font-family: 'aquraium', sans-serif; */
+    font-family: 'future-font', sans-serif;
+    text-decoration: line-through;
+}
+
+
 ::-webkit-scrollbar {
     width: 0px;
     /* Width of the scrollbar */

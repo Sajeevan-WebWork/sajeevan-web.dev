@@ -1,13 +1,17 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 
 
 const AboutExperience = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     return (
         <>
             <motion.div
-                {...fadeInUp} className="bg-custom p-6">
+                initial={fadeInUp.initial}
+                animate={fadeInUp.animate}
+                transition={fadeInUp.transition({ isMobile })} className="bg-custom p-6">
                 <h5 className='text-xl font-[600] pb-6'>Experience</h5>
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col">

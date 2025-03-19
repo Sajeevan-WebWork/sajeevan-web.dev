@@ -20,7 +20,8 @@ const NavBar = () => {
       <header className="flex items-center justify-between py-8 px-4">
 
         <Link to={'/'} className="logo z-100" onClick={() => setNavOpen(false)}>
-          <img src={weblogo} alt="web logo" loading='lazy' className='w-20 z-50 relative' />
+        <h3 className='font-custom text-xl font-bold '>sajeevan</h3>
+          {/* <img src={weblogo} alt="web logo" loading='lazy' className='w-20 z-50 relative' /> */}
         </Link>
 
 

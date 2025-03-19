@@ -27,7 +27,7 @@ const ContactFrom = () => {
                         opacity: 1
                     }}
                     transition={{ delay: .2 }}
-                    className='text-5xl font-[600] leading-12'>Let's <span>Work <span className='text-blue-500'>Together</span></span></motion.h2>
+                    className='text-5xl font-[600] leading-16 lg:leading-12'>Let's <span>Work <span className='text-blue-500'>Together</span></span></motion.h2>
 
                 <motion.form
                     initial={{
@@ -46,7 +46,7 @@ const ContactFrom = () => {
                     <input type="text" name="name" id="name" placeholder='Your Subject*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' />
                     <input type="text" name="name" id="name" placeholder='Your Message*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' />
 
-                    <button className='w-full bg-theme-600 px-5 py-4 rounded-xl hover:bg-theme-950 transition-all duration-500 cursor-pointer'>Sent Message</button>
+                    <button className='w-full bg-theme-600 px-5 py-4 rounded-xl hover:bg-theme-50 hover:text-theme-900 transition-all duration-500 cursor-pointer'>Sent Message</button>
                 </motion.form>
             </motion.div>
         </>

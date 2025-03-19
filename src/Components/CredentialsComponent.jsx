@@ -3,13 +3,17 @@ import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 import signature from '/signature.png'
 import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive'
 
 
 const CredentialsComponent = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     return (
         <>
             <motion.div
-                {...fadeInUp}
+                initial={fadeInUp.initial}
+                animate={fadeInUp.animate}
+                transition={fadeInUp.transition({ isMobile })}
                 className="flex flex-col gap-6 bg-custom py-8 px-5">
                 <div className="signature">
                     <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature" loading='lazy' />
