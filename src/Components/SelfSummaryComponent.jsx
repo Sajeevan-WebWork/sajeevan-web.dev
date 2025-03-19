@@ -3,26 +3,18 @@ import Icon from '/icon.svg'
 import Icon1 from '/icon-1.png'
 import { motion } from 'motion/react'
 import '../app.css'
+import { fadeInUp } from '../lib/FramerMotion'
 const SelfSummaryComponent = () => {
     return (
         <motion.div
-            initial={{
-                y: -50,
-                scale: .7
-            }}
-            animate={{
-                y: 0,
-                scale: 1
-            }}
-
-            transition={{ duration: .8, }}>
+            {...fadeInUp}>
             <div className="flex items-center">
                 <span>
-                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="vector icon" loading='lazy'  />
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="vector icon" loading='lazy' />
                 </span>
                 <h1 className='text-4xl sm:text-5xl lg:text-7xl font-bold uppercase text-white leading-10 lg:leading-16'>Self-summary</h1>
                 <span>
-                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="vector icon" loading='lazy'/>
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="vector icon" loading='lazy' />
                 </span>
             </div>
 

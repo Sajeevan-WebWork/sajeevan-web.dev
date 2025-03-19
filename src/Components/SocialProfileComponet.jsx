@@ -5,22 +5,12 @@ import { Github, Linkedin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import '../app.css'
+import { fadeInUp } from '../lib/FramerMotion'
 
 const SocialProfileComponet = () => {
   return (
     <motion.div
-      initial={{
-        y: -50,
-        scale: .7,
-        opacity: 0
-      }}
-      animate={{
-        y: 0,
-        scale: 1,
-        opacity: 2
-      }}
-
-      transition={{ duration: .8, }}
+      {...fadeInUp}
       className="flex flex-col gap-6 bg-custom px-5 pb-6">
       <div className="social__media flex items-center py-8 px-4 flex-wrap justify-around mt-5 mb-5 bg-custom gap-2">
         <a href="https://github.com/Sajeevan-WebWork" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">

@@ -9,7 +9,7 @@ const ProjectCard = ({ Poster, label, title }) => {
             <motion.div
                 initial={{
                     y: -50,
-                    scale: .7,
+                    scale: .5,
                     opacity: 0
                 }}
                 animate={{

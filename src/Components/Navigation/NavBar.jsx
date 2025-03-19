@@ -44,7 +44,7 @@ const NavBar = () => {
 
 
         {/* Mobile nav */}
-        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-screen h-min mobile__nav w-full items-center gap-14 transition-all duration-400 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
+        <nav className={`lg:hidden flex flex-col absolute top-0 pt-[7em] left-0 h-screen mobile__nav w-full items-center gap-14 transition-all duration-400 z-50 bg-theme-900 ${isNavOpen ? "open__nav " : ""}`}>
 
           {
             navMenuItems.map((item, index) => (

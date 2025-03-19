@@ -15,7 +15,7 @@ const HomePage = () => {
     <>
       {/* *************--------------********* */}
       <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-6">
-        <Link className="profile__card">
+        <Link to={'/about'} className="profile__card">
           <ProfileComponent />
         </Link>
 
@@ -43,7 +43,7 @@ const HomePage = () => {
       {/* *************--------------********* */}
 
       <div className="grid lg:grid-cols-4 lg:grid-rows-1 gap-6 mt-6">
-        <Link className='sm:col-start-1 sm:col-span-1 col-span-2'>
+        <Link to={'/blogs'} className='sm:col-start-1 sm:col-span-1 col-span-2'>
           <BlogComponent />
         </Link>
 

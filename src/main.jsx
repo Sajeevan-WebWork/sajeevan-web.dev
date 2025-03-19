@@ -9,6 +9,7 @@ import Works from './Pages/WorksPage/Works.jsx'
 import Contact from './Pages/ContactPage/Contact.jsx'
 import ServiceOfferings from './Pages/ServicePage/ServiceOfferings.jsx'
 import Credential from './Pages/CredentialPage/Credential.jsx'
+import Blogs from './Pages/BlogsPage/Blogs.jsx'
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "/credential",
         element: <Credential />
+      },
+
+      {
+        path: "/blogs",
+        element: <Blogs />
       }
     ]
   },

@@ -1,19 +1,11 @@
 import React from 'react'
 import { motion } from 'motion/react'
+import { fadeInUp } from '../lib/FramerMotion'
 
 const EducationComponent = () => {
   return (
     <motion.div
-      initial={{
-        y: -50,
-        scale: .7
-      }}
-      animate={{
-        y: 0,
-        scale: 1
-      }}
-
-      transition={{ duration: .8, }}
+      {...fadeInUp}
       className="bg-custom p-6">
       <h5 className='text-xl font-[600] pb-6'>Education</h5>
       <div className="flex flex-col gap-4">

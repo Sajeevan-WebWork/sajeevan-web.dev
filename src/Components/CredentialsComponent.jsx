@@ -2,25 +2,17 @@ import React from 'react'
 import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 import signature from '/signature.png'
+import { fadeInUp } from '../lib/FramerMotion'
 
 
 const CredentialsComponent = () => {
     return (
         <>
             <motion.div
-                initial={{
-                    y: -50,
-                    scale: .7
-                }}
-                animate={{
-                    y: 0,
-                    scale: 1
-                }}
-
-                transition={{ duration: .8, }}
+                {...fadeInUp}
                 className="flex flex-col gap-6 bg-custom py-8 px-5">
                 <div className="signature">
-                    <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature"  loading='lazy'/>
+                    <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature" loading='lazy' />
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col gap-2">

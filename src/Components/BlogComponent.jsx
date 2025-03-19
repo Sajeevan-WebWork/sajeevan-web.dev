@@ -1,3 +1,4 @@
+import { fadeInUp } from '../lib/FramerMotion'
 import Blog from '/blog-1.jpeg'
 import Icon from '/icon.svg'
 import { motion } from 'motion/react'
@@ -7,18 +8,7 @@ const BlogComponent = () => {
   return (
     <>
       <motion.div
-        initial={{
-          y: -50,
-          scale: .7,
-          opacity: 0
-        }}
-        animate={{
-          y: 0,
-          scale: 1,
-          opacity: 2
-        }}
-
-        transition={{ duration: .8, }}
+        {...fadeInUp}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="signature">
           <img src={Blog} alt="Blog" className='rounded-lg h-2/3 object-cover w-full' loading='lazy' />

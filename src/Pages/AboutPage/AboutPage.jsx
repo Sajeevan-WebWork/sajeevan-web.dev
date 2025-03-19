@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import WorkTogetherComponent from '../../Components/WorkTogetherComponent'
 import { motion } from 'motion/react'
 import CredentialsComponent from '../../Components/CredentialsComponent'
+import { fadeInUp } from '../../lib/FramerMotion'
 
 
 const AboutPage = () => {
@@ -16,16 +17,7 @@ const AboutPage = () => {
       <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows-1 gap-10">
         <motion.div
 
-          initial={{
-            y: -50,
-            scale: .7
-          }}
-          animate={{
-            y: 0,
-            scale: 1
-          }}
-
-          transition={{ duration: .8, }}
+          {...fadeInUp}
           className='bg-custom p-6'>
           <img className='h-4/4   object-cover rounded-2xl w-full' src={'/Profile.JPG'} alt="Profile image" loading='lazy' />
         </motion.div>

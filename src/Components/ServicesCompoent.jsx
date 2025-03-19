@@ -3,24 +3,14 @@ import Blog from '/blog-1.jpeg'
 import { motion } from 'motion/react'
 import Icon from '/icon.svg'
 import { Code, Component, Cpu, Figma } from 'lucide-react'
+import { fadeInUp } from '../lib/FramerMotion'
 
 const ServicesCompoent = () => {
   return (
     <>
 
       <motion.div
-        initial={{
-          y: -50,
-          scale: .7,
-          opacity: 0
-        }}
-        animate={{
-          y: 0,
-          scale: 1,
-          opacity: 2
-        }}
-
-        transition={{ duration: .8, }}
+        {...fadeInUp}
         className="flex flex-col gap-6 bg-custom py-8 px-5">
         <div className="services_list flex items-center justify-around md:mt-14 md:mb-10 my-6">
           <Code size={34} />
