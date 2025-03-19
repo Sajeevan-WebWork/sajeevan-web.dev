@@ -16,8 +16,8 @@ export const fadeInUp = {
     // Detect if the screen size is mobile
     transition: ({ isMobile }) => ({
         type: "spring",
-        stiffness: 300,
-        damping: 15,
+        stiffness: 400,
+        damping: 18,
         delay: isMobile ? 0.3 : .2, // Apply delay based on mobile detection
     }),
 };

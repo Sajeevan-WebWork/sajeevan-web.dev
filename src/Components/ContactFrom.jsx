@@ -15,7 +15,7 @@ const ContactFrom = () => {
         setisloading(true);
 
         try {
-            const res = await fetch("http://localhost:5000/api/projectrequest", {
+            const res = await fetch("https://portfolio-backend-six-gamma.vercel.app/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
@@ -81,7 +81,7 @@ const ContactFrom = () => {
                     onSubmit={handleSubmit}
                     action="post" autoComplete='off' className="form py-8 mt-4 flex gap-6 flex-col">
                     <input type="text" name="name" id="name" placeholder='name*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.name} required />
-                    <input type="text" name="email" id="email" placeholder='Email*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.email} required />
+                    <input type="email" name="email" id="email" placeholder='Email*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.email} required />
                     <input type="text" name="subject" id="subject" placeholder='Your Subject*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.subject} required />
                     <input type="text" name="message" id="message" placeholder='Your Message*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.message} required />
 

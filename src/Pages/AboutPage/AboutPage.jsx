@@ -43,9 +43,9 @@ const AboutPage = () => {
       {/*  */}
 
       <div className="grid lg:grid-cols-4 lg:grid-rows-1 gap-6 mt-6 about__page">
-        <Link className='sm:col-start-1 sm:col-span-1 col-span-2'>
+        <div className='sm:col-start-1 sm:col-span-1 col-span-2'>
           <SocialProfileComponet />
-        </Link>
+        </div>
 
         <Link to={'/contact'} className="col-span-2 lg:col-start-2 row-start-1">
           <WorkTogetherComponent />

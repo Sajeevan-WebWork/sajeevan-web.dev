@@ -18,10 +18,10 @@ const SocialProfileComponet = () => {
       className="flex flex-col gap-6 bg-custom px-5 pb-6">
       <div className="social__media flex items-center py-8 px-4 flex-wrap justify-around mt-5 mb-5 bg-custom gap-2">
         <a href="https://github.com/Sajeevan-WebWork" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
-          <Github size={30} className='group-hover:text-black transition-all duration-700' />
+          <Github size={30} className='group-hover:text-black transition-all duration-700 social_icon' />
         </a>
         <a href="https://www.linkedin.com/in/sajeevan-frontend-dev/" target='_blank' className="p-5 transition-all duration-700 social__media__icon group bg-custom">
-          <Linkedin size={30} className='group-hover:text-black transition-all duration-700' />
+          <Linkedin size={30} className='group-hover:text-black transition-all duration-700 social_icon' />
         </a>
       </div>
       <div className="flex items-center justify-between">

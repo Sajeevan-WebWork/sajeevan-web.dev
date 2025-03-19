@@ -2,6 +2,7 @@ import React from 'react'
 import { Github, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
+import { p } from 'motion/react-client'
 
 const ContactInfo = () => {
 
@@ -21,7 +22,7 @@ const ContactInfo = () => {
         {
             icon: MapPin,
             label: "Location",
-            info: "22 Baker Street, Texas United States W1U 3BW",
+            info: "5A, 1st floor, 6th street, Sri Ambal nagar, keelkattalai, Chennai- 600117.",
         }
     ]
     return (
@@ -62,7 +63,16 @@ const ContactInfo = () => {
 
                                     <div className="flex flex-col gap-1">
                                         <small className='text-xs uppercase text-theme-500 font-[600]'>{item.label}</small>
-                                        <a className='text-base font-medium text-theme-100' href={`mailto:${item.info}`}>{item.info}</a>
+                                        {
+                                            item.icon === Phone ? (
+                                                <a className='text-base font-medium text-theme-100' href={`tel:+${item.info}`}>{item.info}</a>
+                                            ) : item.icon === MapPin ? (
+                                                <p className='text-base font-medium text-theme-100'>{item.info}</p>
+                                            ) : (
+                                                <a className='text-base font-medium text-theme-100' href={`mailto:${item.info}`}>{item.info}</a>
+                                            )
+                                        }
+
                                     </div>
                                 </motion.div>
                             ))

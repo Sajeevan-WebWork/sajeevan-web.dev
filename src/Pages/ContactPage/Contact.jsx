@@ -2,6 +2,7 @@ import React from 'react'
 import ContactInfo from '../../Components/ContactInfo'
 import ContactFrom from '../../Components/ContactFrom'
 
+
 const Contact = () => {
     return (
         <>

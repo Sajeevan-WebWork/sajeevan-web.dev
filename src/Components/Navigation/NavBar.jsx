@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { motion } from 'motion/react'
-import weblogo from '/logo.svg'
+import weblogo from '/fire-logo.png'
 import { LayoutDashboard, X } from 'lucide-react'
 
 
@@ -13,15 +13,14 @@ const NavBar = () => {
     { link: "Works", path: "/works" },
     { link: "Contact", path: "/contact" }
   ];
-  console.log(navMenuItems);
 
   return (
     <>
       <header className="flex items-center justify-between py-8 px-4">
 
-        <Link to={'/'} className="logo z-100" onClick={() => setNavOpen(false)}>
-        <h3 className='font-custom text-xl font-bold '>sajeevan</h3>
-          {/* <img src={weblogo} alt="web logo" loading='lazy' className='w-20 z-50 relative' /> */}
+        <Link to={'/'} className="logo z-100 flex items-center" onClick={() => setNavOpen(false)}>
+          {/* <img src={weblogo} alt="web logo" loading='lazy' className='w-15 z-50 relative' /> */}
+          <h3 className='font-custom text-base sm:text-xl font-bold '>sajeevan</h3>
         </Link>
 
 
@@ -33,7 +32,7 @@ const NavBar = () => {
                 key={index}
                 to={item.path}
                 className={({ isActive }) =>
-                  `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600`
+                  `${isActive ? "text-white" : ""} text-lg transition-all hover:text-white text-theme-600 font-medium`
                 }
               >
                 {item.link}
@@ -53,7 +52,7 @@ const NavBar = () => {
                 key={index}
                 to={item.path}
                 onClick={() => setNavOpen(!isNavOpen)}
-                className={({ isActive }) => `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300`} >
+                className={({ isActive }) => `${isActive ? "text-slate-50" : "text-theme-400"} text-lg transition-all hover:text-theme-300 font-medium`} >
                 {item.link}
               </NavLink>
             ))

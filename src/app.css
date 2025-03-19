@@ -42,12 +42,16 @@
     /* background: linear-gradient(120deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05)); */
     /* background: linear-gradient(120deg, #ffffff4d, #ffffff0d); */
 
-    &:hover {
-        background: #ffffff !important;
-        cursor: pointer;
-    }
 }
 
+.social__media__icon:hover {
+    background: #ffffff !important;
+    cursor: pointer;
+}
+
+.social__media__icon:hover .social_icon {
+    color: #000;
+}
 
 .about__page .WorkTogetherComponent h2 {
     font-size: 3em;

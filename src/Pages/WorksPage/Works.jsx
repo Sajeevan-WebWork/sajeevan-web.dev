@@ -20,13 +20,48 @@ const Works = () => {
 
                 <div className="grid lg:col-span-2 row-span-0">
                     <div className="flex items-center">
-                        <span>
+                        <motion.span initial={{
+                            y: -50,
+                            scale: .5,
+                            opacity: 0
+                        }}
+                            animate={{
+                                y: 0,
+                                scale: 1,
+                                opacity: 1
+                            }}
+
+                            transition={{ duration: .3, delay: 1 }}>
                             <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="icon" loading='lazy' />
-                        </span>
-                        <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-white'>All Projects</h1>
-                        <span>
+                        </motion.span>
+                        <motion.h1
+                            initial={{
+                                y: -50,
+                                scale: .5,
+                                opacity: 0
+                            }}
+                            animate={{
+                                y: 0,
+                                scale: 1,
+                                opacity: 1
+                            }}
+
+                            transition={{ duration: .2, delay: 1 }}
+                            className='text-4xl sm:text-5xl lg:text-6xl font-bold uppercase text-white'>All Projects</motion.h1>
+                        <motion.span initial={{
+                            y: -50,
+                            scale: .5,
+                            opacity: 0
+                        }}
+                            animate={{
+                                y: 0,
+                                scale: 1,
+                                opacity: 1
+                            }}
+
+                            transition={{ duration: .2, delay: 1 }}>
                             <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="icon" loading='lazy' />
-                        </span>
+                        </motion.span>
                     </div>
 
                     <div className="grid  sm:grid-cols-2 gap-6 mt-6">
