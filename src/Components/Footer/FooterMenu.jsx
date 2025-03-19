@@ -7,7 +7,8 @@ const FooterMenu = () => {
     <>
       <div className="flex flex-col gap-6 items-center justify-center py-10 my-10">
         <Link>
-          <img src={weblogo} alt="logo" loading='lazy' />
+          {/* <img src={weblogo} alt="logo" loading='lazy' /> */}
+          <h3 className='font-custom text-xl font-bold '>sajeevan</h3>
         </Link>
 
         <ul className="flex items-center gap-12 my-6 flex-wrap">
