@@ -1,24 +1,24 @@
 import React from 'react'
 import Icon from '/icon.svg'
+import { fadeInUp } from '../lib/FramerMotion'
+import { useMediaQuery } from 'react-responsive';
 import { motion } from 'motion/react'
 
 
 const ProjectCard = ({ Poster, label, title }) => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     return (
         <>
             <motion.div
-                initial={{
-                    y: -50,
-                    scale: .8,
-                    opacity: 0
-                }}
-                animate={{
+                initial={fadeInUp.initial}
+                // animate={fadeInUp.animate}
+                transition={fadeInUp.transition({ isMobile })}
+                whileInView={{
+                    opacity: 1,
                     y: 0,
-                    scale: 1,
-                    opacity: 1
+                    scale: 1
                 }}
-
-                transition={{ duration: .2, }} className="bg-custom p-6 hover:shadow-2xl hover:scale-102 hover:-translate-y-1.5 transition-all duration-500 group overflow-hidden">
+                className="bg-custom p-6 group overflow-hidden">
                 <div className="poster overflow-hidden">
                     <img
                         src={Poster}
