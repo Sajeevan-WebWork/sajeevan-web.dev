@@ -16,7 +16,22 @@ const NavBar = () => {
 
   return (
     <>
-      <header className="flex items-center justify-between py-8 px-4">
+      <motion.header
+        initial={{
+          opacity: 0,
+          y: -30
+        }}
+
+        animate={{
+          opacity: 1,
+          y: 0
+        }}
+
+        transition={{
+          duration: .2,
+          delay: .2
+        }}
+        className="flex items-center justify-between py-8 px-4">
 
         <Link to={'/'} className="logo z-100 flex items-center" onClick={() => setNavOpen(false)}>
           {/* <img src={weblogo} alt="web logo" loading='lazy' className='w-15 z-50 relative' /> */}
@@ -80,7 +95,7 @@ const NavBar = () => {
 
         </div>
 
-      </header>
+      </motion.header>
     </>
   )
 }
