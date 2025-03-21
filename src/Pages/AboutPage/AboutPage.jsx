@@ -11,10 +11,11 @@ import { fadeInUp } from '../../lib/FramerMotion'
 import { useMediaQuery } from 'react-responsive';
 
 
+
 const AboutPage = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
-    <div>
+    <>
 
       <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows-1 gap-10">
         <motion.div
@@ -56,7 +57,7 @@ const AboutPage = () => {
         </Link>
 
       </div>
-    </div>
+    </>
   )
 }
 
