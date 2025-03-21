@@ -79,3 +79,11 @@
     font-size: 1rem;
     text-transform: capitalize;
 }
+
+.Project__Poster .poster_overlay {
+    opacity: 0;
+}
+
+.Project__Poster:hover .poster_overlay{
+    opacity: 1;
+}

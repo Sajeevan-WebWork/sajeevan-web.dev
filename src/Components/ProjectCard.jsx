@@ -3,6 +3,7 @@ import Icon from '/icon.svg'
 import { fadeInUp } from '../lib/FramerMotion'
 import { useMediaQuery } from 'react-responsive';
 import { motion } from 'motion/react'
+import '../app.css'
 
 
 const ProjectCard = ({ Poster, label, title }) => {
@@ -18,14 +19,17 @@ const ProjectCard = ({ Poster, label, title }) => {
                     y: 0,
                     scale: 1
                 }}
+                viewport={{ once: true, amount: 0.2 }}
                 className="bg-custom p-6 group overflow-hidden">
-                <div className="poster overflow-hidden">
+                <div className="Project__Poster overflow-hidden relative ">
                     <img
                         src={Poster}
-                        className="rounded-3xl h-full w-full object-cover "
+                        className="rounded-3xl h-[15rem] w-full object-cover "
                         alt="Project Poster"
                         loading='lazy'
                     />
+
+                    <span className='absolute poster_overlay top-0 h-full w-full group bg-theme-900/70 rounded-3xl flex items-center justify-center text-3xl font-bold tracking-wider transition-all duration-300 uppercase'>open</span>
                 </div>
 
                 <div className="flex items-start justify-between pt-5">

@@ -5,7 +5,6 @@ import CredentialDetails from '../../Components/CredentialDetails'
 const Credential = () => {
     return (
         <>
-        
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
                 <div className="md:col-span-1">
                     <div className="md:sticky-md-top CredentialProfile">

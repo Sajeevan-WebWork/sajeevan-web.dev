@@ -24,7 +24,7 @@ const AboutPage = () => {
           animate={fadeInUp.animate}
           transition={fadeInUp.transition({ isMobile })}
           className='bg-custom p-6'>
-          <img className='h-4/4   object-cover rounded-2xl w-full' src={'/Profile.JPG'} alt="Profile image" loading='lazy' />
+          <img className='h-[20rem] object-top  object-cover rounded-2xl w-full' src={'/about-profile-img.JPG'} alt="Profile image" loading='lazy' />
         </motion.div>
         <div className="lg:col-span-2">
           <SelfSummaryComponent />
