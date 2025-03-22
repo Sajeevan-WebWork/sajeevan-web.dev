@@ -2,44 +2,77 @@ const Skills = [
     {
         name: "HTML",
         percentage: 99,
-        label: "Non enim praesent"
+        label: "Expert"
     },
 
     {
         name: "CSS",
         percentage: 99,
-        label: "Non enim praesent"
+        label: "Expert"
     },
 
     {
         name: "SCSS",
         percentage: 75,
-        label: "Non enim praesent"
+        label: "Advanced"
     },
 
     {
-        name: "Boostrap",
+        name: "Bootstrap",
         percentage: 80,
-        label: "Non enim praesent"
+        label: "Advanced"
     },
 
     {
-        name: "Javascript",
+        name: "WordPress",
+        percentage: 70,
+        label: "Advanced"
+    },
+
+    {
+        name: "JavaScript",
         percentage: 60,
-        label: "Non enim praesent"
+        label: "Intermediate"
     },
 
     {
-        name: "Jquery",
+        name: "jQuery",
         percentage: 50,
-        label: "Non enim praesent"
+        label: "Intermediate"
     },
+    
 
     {
         name: "React JS",
         percentage: 50,
-        label: "Non enim praesent"
+        label: "Intermediate"
     },
+
+    {
+        name: "Tailwind",
+        percentage: "60",
+        label: "Intermediate"
+    },
+
+    {
+        name: "GitHub",
+        percentage: "59",
+        label: "Intermediate"
+    },
+
+    {
+        name: "Angular",
+        percentage: "30",
+        label: "beginner"
+    },
+
+
+    {
+        name: "Angular Material",
+        percentage: "30",
+        label: "beginner"
+    },
+
 ]
 
-export default Skills
+export default Skills;

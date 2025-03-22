@@ -6,6 +6,8 @@ const ContactFrom = () => {
     const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" })
     const [isloading, setisloading] = useState(false)
 
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"; // For Vite
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
@@ -15,7 +17,8 @@ const ContactFrom = () => {
         setisloading(true);
 
         try {
-            const res = await fetch("https://portfolio-backend-1ioy.onrender.com/contact", {
+            const res = await fetch(`${API_URL}/contact`, {
+                // const res = await fetch("http://localhost:5000/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
@@ -31,11 +34,11 @@ const ContactFrom = () => {
                     maxWidth: "800px"
                 }
             });
-            setFormData({ name: "", email: "", subject: "", message: "" });
+            setFormData({ name: "", email: "", subject: "", message: "", });
         } catch (error) {
             toast.error(error.message);
         } finally {
-            setFormData({ name: "", email: "", subject: "", message: "" });
+            setFormData({ name: "", email: "", subject: "", message: "", });
             setisloading(false);
         }
     };
