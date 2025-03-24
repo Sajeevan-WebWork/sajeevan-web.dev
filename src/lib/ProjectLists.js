@@ -1,73 +1,92 @@
-import { label } from "motion/react-client";
-
 const Project = [
     {
         name: "Mystudio",
         link: "https://mystudio.io/",
-        poster: "/Mystudio-Porject.mov",
+        poster: "/Projects/Mystudio-Porject.mov",
         label: "website"
     },
 
     {
         name: "Edrevel",
         link: "https://edrevel.com/",
-        poster: "Edrevel-Project-video.mov",
+        poster: "/Projects/Edrevel-Project-video.mov",
         label: "website"
     },
 
     {
         name: "Technogems",
         link: "https://technogemsinc.com/",
-        poster: "/Technogems-Project.mov",
+        poster: "/Projects/Technogems-Project.mov",
         label: "website"
     },
 
     {
         name: "Textiles",
         link: "https://tntextiles.tn.gov.in/",
-        poster: "/Texttile-project.mov",
+        poster: "/Projects/Texttile-project.mov",
         label: "Wordpress"
     },
 
     {
         name: "Nextec",
         link: "https://nextecinc.com/",
-        poster: "/Nextecinc-Project.mov",
+        poster: "/Projects/Nextecinc-Project.mov",
         label: "Wordpress"
     },
 
     {
         name: "Job portal login auth",
-        link: "",
-        poster: "/Job-portal-login-auth.mov",
+        link: null,
+        poster: "/Projects/Job-portal-login-auth.mov",
         label: "Self Learning Project"
     },
 
     {
         name: "login authentication",
-        link: "",
-        poster: "/Login-auth-Project.mov",
+        link: null,
+        poster: "/Projects/Login-auth-Project.mov",
         label: "Self Learning Project"
     },
 
     {
         name: "employer Dashboard",
-        link: "",
-        poster: "/BiPay-Project.mov",
+        link: null,
+        poster: "/Projects/BiPay-Project.mov",
         label: "Self Learning Project"
     },
 
     {
         name: "Tusgu Website",
-        link: "",
-        poster: "/Tusgu-Project.mov",
+        link: null,
+        poster: "/Projects/Tusgu-Project.mov",
         label: "Freelance"
     },
 
     {
-        name: "Job portal",
-        link: "",
-        poster: "/Job-Portal-Project.mov",
+        name: "Job portal Dashboard",
+        link: null,
+        poster: "/Projects/Job-Portal-Project.mov",
+        label: "Self Learning Project"
+    },
+
+    {
+        name: "Photography Portfolio",
+        link: null,
+        poster: "/Projects/Photography-portfolio.mov",
+        label: "Self Learning Project"
+    },
+
+    {
+        name: "restaurant website",
+        link: null,
+        poster: "/Projects/restaurant-Project.mov",
+        label: "Self Learning Project"
+    },
+
+    {
+        name: "Simple Portfoio",
+        link: null,
+        poster: "/Projects/Portfolio-website.mov",
         label: "Self Learning Project"
     }
 ]

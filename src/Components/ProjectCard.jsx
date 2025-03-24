@@ -33,9 +33,13 @@ const ProjectCard = ({ Poster, label, title }) => {
                         loading='lazy'
                         autoPlay={true}
                         muted
+                        preload="none"
+                        playsInline
                         loop></video>
 
-                    <span className='absolute poster_overlay top-0 h-full w-full group bg-theme-900/70 rounded-3xl flex items-center justify-center text-3xl font-bold tracking-wider transition-all duration-300 uppercase'>open</span>
+                    <span className='absolute poster_overlay top-0 h-full w-full group bg-theme-900/70 rounded-3xl flex items-center justify-center text-3xl font-bold tracking-wider transition-all duration-300 uppercase'>
+                        <span className='poster__text'>open</span>
+                    </span>
                 </div>
 
                 <div className="flex items-start justify-between pt-5">

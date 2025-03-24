@@ -17,13 +17,13 @@ const CredentialProfile = () => {
                 transition={fadeInUp.transition({ isMobile })}
                 className="bg-custom p-6">
                 <div className="poster">
-                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/me.png" className='bg-blue-300 rounded-3xl   object-cover' loading='lazy' alt="Profile Images" />
-                    {/* <img src="/profileimages.JPG" className='bg-blue-300 rounded-3xl  h-[18rem] w-full object-cover object-top' loading='lazy' alt="Profile Images" /> */}
+                    {/* <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/me.png" className='bg-blue-300 rounded-3xl   object-cover' loading='lazy' alt="Profile Images" /> */}
+                    <img src="/profileimages.JPG" className='bg-blue-300 rounded-3xl  h-[18rem] w-full object-cover object-top' loading='lazy' alt="Profile Images" />
                 </div>
 
                 <div className="flex flex-col justify-center items-center mt-10 gap-4">
-                    <h3 className='text-3xl font-medium'>David Henderson</h3>
-                    <p className='text-lg text-gray-400'>@davidhenderson</p>
+                    <h3 className='text-3xl font-medium'>Sajeevan Balasingam</h3>
+                    <p className='text-lg text-gray-400'>@sajeevanbalasingam</p>
 
                     <div className="flex items-center gap-6 my-5">
                         <Link to="https://github.com/Sajeevan-WebWork" target='_blank' className='bg-custom p-4 social__media__icon transition-all duration-500'>

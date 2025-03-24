@@ -1,5 +1,4 @@
 import React from 'react'
-import Blog from '/blog-1.jpeg'
 import Icon from '/icon.svg'
 import { Github, Linkedin } from 'lucide-react'
 import { Link } from 'react-router-dom'

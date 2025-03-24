@@ -81,9 +81,18 @@
 }
 
 .Project__Poster .poster_overlay {
+    opacity: .2;
+}
+
+.poster_overlay .poster__text {
     opacity: 0;
 }
 
-.Project__Poster:hover .poster_overlay{
+.Project__Poster:hover .poster_overlay {
     opacity: 1;
+}
+
+.Project__Poster:hover .poster__text {
+    opacity: 1;
+    position: relative;
 }

@@ -1,6 +1,6 @@
 import { useMediaQuery } from 'react-responsive'
 import { fadeInUp } from '../lib/FramerMotion'
-import Blog from '/blog-1.jpeg'
+import Blog from '/Blog-thumbnail.jpg'
 import Icon from '/icon.svg'
 import { motion } from 'motion/react'
 import React from 'react'
