@@ -22,12 +22,18 @@ const ProjectCard = ({ Poster, label, title }) => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="bg-custom p-6 group overflow-hidden">
                 <div className="Project__Poster overflow-hidden relative ">
-                    <img
+                    {/* <img
                         src={Poster}
                         className="rounded-3xl h-[15rem] w-full object-cover "
                         alt="Project Poster"
                         loading='lazy'
-                    />
+                    /> */}
+                    <video src={Poster} className="rounded-3xl h-[15rem] w-full object-cover "
+                        alt="Project Poster"
+                        loading='lazy'
+                        autoPlay={true}
+                        muted
+                        loop></video>
 
                     <span className='absolute poster_overlay top-0 h-full w-full group bg-theme-900/70 rounded-3xl flex items-center justify-center text-3xl font-bold tracking-wider transition-all duration-300 uppercase'>open</span>
                 </div>

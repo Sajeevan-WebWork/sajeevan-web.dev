@@ -18,8 +18,15 @@ const ServicesCategories = () => {
                     className="flex flex-col m-auto">
                     {
                         ServicesList.map((item, index) => (
-                            <li key={index} className="flex items-start justify-start space-x-2 gap-5 lg:gap-10 my-15">
-                                <item.icon size={30} className="block" />
+                            <li key={index} className="flex items-start justify-start space-x-2 gap-5 lg:gap-8 my-15">
+                                {
+                                    item.icon ? (
+                                        <item.icon size={30} className="block w-12 m-0" />
+
+                                    ) : (
+                                        <img src={item.img} alt="icon image" className='w-10 m-0 invert' />
+                                    )
+                                }
                                 <span className='text-lg uppercase font-semibold'>{item.title}</span>
                             </li>
                         ))

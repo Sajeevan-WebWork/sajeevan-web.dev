@@ -5,6 +5,7 @@ import ServicesDescription from '../../Components/ServicesDescription'
 import { motion } from 'motion/react'
 import { useMediaQuery } from 'react-responsive';
 import { fadeInUp } from '../../lib/FramerMotion'
+import ServicesList from '../../lib/ServicesList'
 
 
 const ServiceOfferings = () => {
@@ -12,7 +13,7 @@ const ServiceOfferings = () => {
 
     return (
         <>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
                 <ServicesCategories />
                 <div className='md:col-span-2 grid gap-6 content-start justify-items-center'>
                     <StarText fontSize={'lg:text-7xl'} title={'My Offerings'} />
@@ -21,10 +22,12 @@ const ServiceOfferings = () => {
                         animate={fadeInUp.animate}
                         transition={fadeInUp.transition({ isMobile })}
                         className='bg-custom p-6 gap-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                        <ServicesDescription title={'Photography'} details={'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.'} />
-                        <ServicesDescription title={'Photography'} details={'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.'} />
-                        <ServicesDescription title={'Photography'} details={'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.'} />
-                        <ServicesDescription title={'Photography'} details={'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.'} />
+
+                        {
+                            ServicesList.map((item, index) => (
+                                <ServicesDescription title={item.title} details={item.description} />
+                            ))
+                        }
                     </motion.div>
                 </div>
             </div>

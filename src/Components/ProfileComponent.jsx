@@ -18,9 +18,9 @@ const ProfileComponent = () => {
         className="bg-custom  md:py-[50px] md:px-[46px] p-6 pb-15">
         <div className="grid sm:grid-cols-2 items-center gap-10 md:gap-6">
           <div className="poster">
-            {/* <img className='profile-poster h-2/4 lg:h-60  object-cover bg-blue-400' width="100%" height={'100%'} src={'https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png'} alt="Profile images" loading='lazy' /> */}
+            <img className='profile-poster h-2/4 lg:h-60  object-cover bg-blue-400' width="100%" height={'100%'} src={'https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png'} alt="Profile images" loading='lazy' />
             {/* <img className='profile-poster h-90 md:h-80 xl:h-60  object-cover object-top' width="100%" height={'100%'} src={'/IMG_3414.JPG'} loading='lazy' alt="Profile images" /> */}
-            <img className='profile-poster h-2/4 lg:h-60  object-cover' width="100%" height={'100%'} src={'/Profile.JPG'} alt="Profile images" loading='lazy' />
+            {/* <img className='profile-poster h-2/4 lg:h-60  object-cover' width="100%" height={'100%'} src={'/Profile.JPG'} alt="Profile images" loading='lazy' /> */}
           </div>
           <div className="flex flex-col relative">
             <small className='text-xs font-medium text-theme-300 uppercase'>A Frontend developer</small>
