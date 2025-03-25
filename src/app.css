@@ -71,7 +71,7 @@
 }
 
 .form__input:focus {
-    border: none;
+    /* border: none; */
     outline: none;
 }
 

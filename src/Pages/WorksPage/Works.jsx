@@ -13,7 +13,8 @@ const Works = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 order-1 lg:order-none">
                     {
                         Project.slice(0, 4).map((item, index) => (
-                            <Link to={item.link} target='_blank'>
+                            <Link>
+                                {/* to={item.link} target='_blank' */}
                                 <ProjectCard Poster={item.poster} label={item.label} title={item.name} />
                             </Link>
                         ))
@@ -26,7 +27,8 @@ const Works = () => {
                     <div className="grid  sm:grid-cols-2 gap-6 mt-6">
                         {
                             Project.slice(4).map((item, index) => (
-                                <Link to={item.link} target='_blank'>
+                                <Link>
+                                    {/* to={item.link} target='_blank' */}
                                     <ProjectCard Poster={item.poster} label={item.label} title={item.name} />
                                 </Link>
                             ))

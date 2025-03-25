@@ -58,7 +58,7 @@ const ContactFrom = () => {
                     opacity: 1
                 }}
                 transition={{ delay: .2 }}
-                className="bg-custom p-5 lg:p-10">
+                className="bg-custom p-2 py-6 sm:p-5 lg:p-10">
                 <motion.h2
                     initial={{
                         y: -100,
@@ -86,10 +86,10 @@ const ContactFrom = () => {
 
                     onSubmit={handleSubmit}
                     action="post" autoComplete='off' className="form py-8 mt-4 flex gap-6 flex-col">
-                    <input type="text" name="name" id="name" placeholder='name*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.name} required />
+                    <input type="text" name="name" id="name" placeholder='name*' className='px-5 py-5 form__input focus:shadow-2xl focus:border-2  focus:border-cyan-300 transition-all duration-300' onChange={handleChange} value={formData.name} required />
                     <input type="email" name="email" id="email" placeholder='Email*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.email} required />
                     <input type="text" name="subject" id="subject" placeholder='Your Subject*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.subject} required />
-                    <input type="text" name="message" id="message" placeholder='Your Message*' className='px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.message} required />
+                    <textarea rows={6} type="text" name="message" id="message" placeholder='Your Message*' className='resize-none px-5 py-5 form__input focus:shadow-2xl transition-all duration-300' onChange={handleChange} value={formData.message} required />
 
                     <button type='submit' className='w-full bg-theme-600 text-center flex items-center justify-center px-5 py-4 rounded-xl hover:bg-theme-50 hover:text-theme-900 transition-all duration-500 cursor-pointer'>
                         {

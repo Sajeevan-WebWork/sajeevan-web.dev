@@ -1,10 +1,10 @@
 const Project = [
-    {
-        name: "Mystudio",
-        link: "https://mystudio.io/",
-        poster: "/Projects/Mystudio-Porject.mov",
-        label: "website"
-    },
+    // {
+    //     name: "Mystudio",
+    //     link: "https://mystudio.io/",
+    //     poster: "/Projects/Mystudio-Porject.mov",
+    //     label: "website"
+    // },
 
     {
         name: "Edrevel",
