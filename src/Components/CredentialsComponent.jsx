@@ -16,7 +16,7 @@ const CredentialsComponent = () => {
                 transition={fadeInUp.transition({ isMobile })}
                 className="flex flex-col gap-6 bg-custom py-8 px-5">
                 <div className="signature">
-                    <img src={signature} className='rounded-lg h-2/3 w-full object-cover' alt="signature" loading='lazy' />
+                    <img src={signature} className='rounded-lg w-full sm:h-[10rem] object-contain' alt="signature" loading='lazy' />
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col gap-2">

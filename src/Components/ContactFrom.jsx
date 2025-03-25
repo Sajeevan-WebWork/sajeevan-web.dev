@@ -6,7 +6,8 @@ const ContactFrom = () => {
     const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" })
     const [isloading, setisloading] = useState(false)
 
-    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"; // For Vite
+    const API_URL = window.location.hostname === "sajeevan-web-dev.web.app" ? import.meta.env.VITE_API_URL : "http://localhost:5000";
+    const API_KEY = import.meta.env.VITE_API_SECRET_KEY;
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -18,9 +19,11 @@ const ContactFrom = () => {
 
         try {
             const res = await fetch(`${API_URL}/contact`, {
-                // const res = await fetch("http://localhost:5000/contact", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-api-key": API_KEY
+                },
                 body: JSON.stringify(formData)
             });
             const data = await res.json();

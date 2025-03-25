@@ -22,7 +22,7 @@ const ProjectComponent = () => {
       <motion.div initial={fadeInUp.initial}
         animate={fadeInUp.animate}
         transition={fadeInUp.transition({ isMobile })}
-        className="flex flex-col gap-6 bg-custom py-8 px-5 relative">
+        className="flex flex-col gap-6 bg-custom py-8 px-5">
         <Swiper className="signature signature w-full"
           modules={[Autoplay]}
           autoplay={{ delay: 5000 }}
@@ -32,7 +32,7 @@ const ProjectComponent = () => {
               <SwiperSlide key={index} className="w-full flex justify-center items-center">
                 <video src={item.poster}
                   alt="Project Poster"
-                  className="rounded-2xl w-full  object-cover h-[10rem]"
+                  className="rounded-2xl w-full  object-cover h-[15rem] sm:h-[10rem]"
                   autoPlay
                   muted
                   preload="none"

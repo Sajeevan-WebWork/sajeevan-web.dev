@@ -19,7 +19,7 @@ const ServicesDescription = ({ title, details }) => {
                     scale: 1
                 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="bg-custom p-8 pb-14">
+                className="bg-custom px-6 py-8 sm:p-8 pb-14">
                 <h5 className='uppercase text-md font-[600] pb-2 text-theme-400'>{title}</h5>
                 <p className='text-base leading-7'>{details}</p>
             </motion.div>

@@ -11,7 +11,7 @@ const MyJourney = () => {
                 <p className='text-base text-theme-200'>My Journey</p>
             </div>
 
-            <StarText title={'A Passionate Frontend Developer and Tech Enthusiast'} fontSize={'lg:text-2xl lg:leading-16'} />
+            <StarText title={'A Passionate Frontend Developer and Tech Enthusiast'} style={'lg:text-2xl lg:leading-16'} />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 pt-20">
                 <div className='col-span-2'>
