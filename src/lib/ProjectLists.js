@@ -43,7 +43,7 @@ const Project = [
 
     {
         name: "login authentication",
-        link: null,
+        link: 'https://login-auth-32bdd.web.app/',
         poster: "/Projects/Login-auth-Project.mov",
         label: "Self Learning Project"
     },
