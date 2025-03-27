@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import Icon from '/icon.svg'
-import signature from '/signature.png'
+import signature from '/signature.webp'
 import { fadeInUp } from '../lib/FramerMotion'
 import { useMediaQuery } from 'react-responsive'
 

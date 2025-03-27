@@ -1,6 +1,6 @@
 import { fadeInUp } from '../lib/FramerMotion'
 import Icon from '/icon.svg'
-import Project1 from '/Project-thumbnail.jpg'
+import Project1 from '/Project-thumbnail.webp'
 import { motion } from 'motion/react'
 import React from 'react'
 import { useMediaQuery } from 'react-responsive';
