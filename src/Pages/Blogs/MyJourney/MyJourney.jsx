@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import StarText from '../../../Components/StarText'
 import AboutMySkills from '../../../lib/AboutMySkills'
+import { motion } from 'motion/react'
+
 
 const MyJourney = () => {
     return (
@@ -11,20 +13,26 @@ const MyJourney = () => {
                 <p className='text-base text-theme-200'>My Journey</p>
             </div>
 
-            <StarText title={'A Passionate Frontend Developer and Tech Enthusiast'} style={'lg:text-2xl lg:leading-16'} />
+            <StarText title={'A Passionate Frontend Developer and Tech Enthusiast'} style={' lg:text-2xl lg:leading-16'} />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 pt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 pt-20">
                 <div className='col-span-2'>
-                    <img className='w-full rounded-lg' width={'100%'} height={'100%'} src="https://img.freepik.com/free-photo/shallow-focus-from-male-standing-pathway-middle-grassy-field_181624-7323.jpg?uid=P144082521&ga=GA1.1.810160377.1738327101&semt=ais_keywords_boost" alt="" />
+                    <div>
+                        <img className='w-full rounded-lg' width={'100%'} height={'100%'} src="https://img.freepik.com/free-photo/shallow-focus-from-male-standing-pathway-middle-grassy-field_181624-7323.jpg?uid=P144082521&ga=GA1.1.810160377.1738327101&semt=ais_keywords_boost" alt="" />
+                    </div>
 
-                    <div className="my-5 py-6">
+                    <div
+                        className="my-5 py-6">
                         <h2 className="text-2xl font-semibold">Introduction</h2>
                         <p className='text-base text-theme-200 py-3'>I'm a dedicated and passionate frontend developer with a strong background in web development, particularly in React and the MERN stack. With years of experience in UI development and web technologies, I'm committed to crafting seamless, user-friendly, and visually appealing digital experiences. His expertise spans multiple domains, including JavaScript, CSS, HTML, and modern frontend frameworks.</p>
                     </div>
 
                     <div className="my-5">
-                        <h2 className="text-2xl font-semibold">Technical Expertise</h2>
-                        <p className='text-base text-theme-200 py-3'>I have gained substantial knowledge in frontend development, continuously improving his skills and adapting to new industry trends. His key areas of expertise include:</p>
+                        <div>
+
+                            <h2 className="text-2xl font-semibold">Technical Expertise</h2>
+                            <p className='text-base text-theme-200 py-3'>I have gained substantial knowledge in frontend development, continuously improving his skills and adapting to new industry trends. His key areas of expertise include:</p>
+                        </div>
 
                         {
                             AboutMySkills.map((section, index) => (

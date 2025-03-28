@@ -25,7 +25,7 @@ const AboutPage = () => {
           transition={fadeInUp.transition({ isMobile })}
           className='bg-custom p-6'>
           {/* <img className='profile-poster h-2/4 lg:h-60  object-cover bg-blue-400' width="100%" height={'100%'} src={'https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png'} alt="Profile images" loading='lazy' /> */}
-          <img className='h-[30rem] lg:h-4/4 object-center grayscale-100 hover:grayscale-0 object-cover rounded-2xl w-full' src={'/Profile-Card.webp'} alt="Profile image" loading='lazy' />
+          <img className='h-[30rem] lg:h-4/4 object-center hover:grayscale-100 object-cover rounded-2xl w-full' src={'/Profile-Card.webp'} alt="Profile image" loading='lazy' />
         </motion.div>
         <div className="lg:col-span-2">
           <SelfSummaryComponent />

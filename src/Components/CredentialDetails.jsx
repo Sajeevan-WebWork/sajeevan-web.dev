@@ -24,7 +24,7 @@ const CredentialDetails = () => {
                 transition={{ delay: .2 }}
                 className="about__wrapper mb-10 pb-10">
                 <h3 className='text-2xl pb-8 font-[600] uppercase'>About Me</h3>
-                <p className='text-base leading-7 font-normal'>As a passionate and results-driven Frontend Developer with 3.8 years of experience, I specialize in creating dynamic and user-friendly web applications. With a solid foundation in HTML, CSS, JavaScript, and Bootstrap, along with modern frontend frameworks and libraries like React, Angular, Tailwind CSS, Angular Material, and Shadcn UI, I focus on delivering high-quality, responsive designs and seamless user experiences.
+                <p className='text-base leading-7 font-normal'>As a passionate and results-driven Frontend Developer with 3.8+ years of experience, I specialize in creating dynamic and user-friendly web applications. With a solid foundation in HTML, CSS, JavaScript, and Bootstrap, along with modern frontend frameworks and libraries like React, Angular, Tailwind CSS, Angular Material, and Shadcn UI, I focus on delivering high-quality, responsive designs and seamless user experiences.
 
                     I am always eager to connect with like-minded professionals, share insights, and explore new opportunities for growth in the field of frontend development. Let’s connect!</p>
             </motion.div>

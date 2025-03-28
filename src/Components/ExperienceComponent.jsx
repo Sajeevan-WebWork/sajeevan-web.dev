@@ -13,7 +13,7 @@ const ExperienceComponent = () => {
                 transition={fadeInUp.transition({ isMobile })}
                 className="bg-custom py-8 px-6 flex flex-wrap items-center justify-around gap-6">
                 <div className="flex flex-col items-center gap-2 bg-custom p-6 md:p-6 xl:p-8">
-                    <h2 className='text-3xl font-[600]'>3.8</h2>
+                    <h2 className='text-3xl font-[600]'>3.8+</h2>
                     <p className='uppercase text-xs text-theme-300 p-0 m-0 leading-3'>Years</p>
                     <p className='uppercase text-xs text-theme-300 p-0 m-0 leading-3'>Experience</p>
                 </div>

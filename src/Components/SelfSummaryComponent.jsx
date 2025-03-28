@@ -26,7 +26,7 @@ const SelfSummaryComponent = () => {
                 <img src={Icon1} alt="icon" className='absolute top-0' loading='lazy' />
                 <div className="flex flex-col gap-4 mt-4">
                     <h2 className='text-4xl font-[500] leading-12'>Sajeevan Balasingam</h2>
-                    <p className='text-base font-medium text-theme-300 leading-7'>Frontend Developer with 3.8 years of experience in building dynamic, user-friendly web applications. Skilled in HTML, CSS, JavaScript, Bootstrap, React, Angular, Tailwind CSS, and more. Focused on creating responsive designs and seamless user experiences. Always open to learning, collaboration, and new opportunities.</p>
+                    <p className='text-base font-medium text-theme-300 leading-7'>Frontend Developer with 3.8+ years of experience in building dynamic, user-friendly web applications. Skilled in HTML, CSS, JavaScript, Bootstrap, React, Angular, Tailwind CSS, and more. Focused on creating responsive designs and seamless user experiences. Always open to learning, collaboration, and new opportunities.</p>
                 </div>
             </div>
         </motion.div>

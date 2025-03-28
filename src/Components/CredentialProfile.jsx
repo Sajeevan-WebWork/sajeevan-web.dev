@@ -18,7 +18,7 @@ const CredentialProfile = () => {
                 className="bg-custom p-6">
                 <div className="poster">
                     {/* <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/me.png" className='bg-blue-300 rounded-3xl   object-cover' loading='lazy' alt="Profile Images" /> */}
-                    <img src="/profileimages.webp" className='bg-blue-300 rounded-3xl grayscale-100 hover:grayscale-0  h-[18rem] w-full object-cover object-top' loading='lazy' alt="Profile Images" />
+                    <img src="/profileimages.webp" className='bg-blue-300 rounded-3xl hover:grayscale-100  h-[18rem] w-full object-cover object-top' loading='lazy' alt="Profile Images" />
                 </div>
 
                 <div className="flex flex-col justify-center items-center mt-10 gap-4">

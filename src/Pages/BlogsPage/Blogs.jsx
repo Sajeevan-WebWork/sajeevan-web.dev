@@ -5,8 +5,8 @@ import MyJourney from '../Blogs/MyJourney/MyJourney'
 const Blogs = () => {
     return (
         <div>
-            {/* <MyJourney /> */}
-            <ComingSoon />
+            <MyJourney />
+            {/* <ComingSoon /> */}
         </div>
     )
 }

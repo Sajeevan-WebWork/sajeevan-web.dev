@@ -16,7 +16,7 @@ const StarText = ({ title, style }) => {
                     }}
 
                     transition={{ duration: .3, delay: .2 }}>
-                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} className='md:w-30' alt="icon" loading='lazy' />
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} className='w-50 md:w-30' alt="icon" loading='lazy' />
                 </motion.span>
                 <motion.h1
                     initial={{
@@ -44,7 +44,7 @@ const StarText = ({ title, style }) => {
                     }}
 
                     transition={{ duration: .2, delay: .2 }}>
-                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="icon" className='md:w-30' loading='lazy' />
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png" width={'100%'} alt="icon" className='w-50 md:w-30' loading='lazy' />
                 </motion.span>
             </div>
         </>

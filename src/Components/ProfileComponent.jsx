@@ -20,7 +20,7 @@ const ProfileComponent = () => {
           <div className="poster">
             {/* <img className='profile-poster h-2/4 lg:h-60  object-cover bg-blue-400' width="100%" height={'100%'} src={'https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png'} alt="Profile images" loading='lazy' /> */}
             {/* <img className='profile-poster h-90 md:h-80 xl:h-60  object-cover object-top' width="100%" height={'100%'} src={'/IMG_3414.JPG'} loading='lazy' alt="Profile images" /> */}
-            <img className='profile-poster h-2/4 lg:h-60  object-cover grayscale-100 hover:grayscale-0 transition-all' width="100%" height={'100%'} src={'/Profile.webp'} alt="Profile images" loading='lazy' />
+            <img className='profile-poster lg:h-70 h-3/4   object-cover  hover:grayscale-100 transition-all' width="100%" height={'100%'} src={'/Profile.webp'} alt="Profile images" loading='lazy' />
           </div>
           <div className="flex flex-col relative">
             <small className='text-xs font-medium text-theme-300 uppercase'>A Frontend developer</small>
