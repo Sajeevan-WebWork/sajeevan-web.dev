@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { motion } from 'motion/react'
-import weblogo from '/fire-logo.png'
 import { LayoutDashboard, X } from 'lucide-react'
 
 

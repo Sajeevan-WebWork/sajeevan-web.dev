@@ -7,31 +7,38 @@ const Project = [
     // },
 
     {
+        name: "Tusgu Website",
+        link: null,
+        poster: "/Projects/Tusgu-Project.mov",
+        label: "Freelance"
+    },
+
+    {
         name: "Edrevel",
         link: "https://edrevel.com/",
         poster: "/Projects/Edrevel-Project-video.mov",
-        label: "website"
+        label: "Company Project"
     },
 
     {
         name: "Technogems",
         link: "https://technogemsinc.com/",
         poster: "/Projects/Technogems-Project.mov",
-        label: "website"
+        label: "Company Project"
     },
 
     {
         name: "Textiles",
         link: "https://tntextiles.tn.gov.in/",
         poster: "/Projects/Texttile-project.mov",
-        label: "Wordpress"
+        label: "Company Project"
     },
 
     {
         name: "Nextec",
         link: "https://nextecinc.com/",
         poster: "/Projects/Nextecinc-Project.mov",
-        label: "Wordpress"
+        label: "Company Project"
     },
 
     {
@@ -55,12 +62,6 @@ const Project = [
         label: "Self Learning Project"
     },
 
-    {
-        name: "Tusgu Website",
-        link: null,
-        poster: "/Projects/Tusgu-Project.mov",
-        label: "Freelance"
-    },
 
     {
         name: "Job portal Dashboard",

@@ -10,7 +10,7 @@ const ServicesList = [
 
     {
         title: "WordPress Website",
-        img: '/wordpress-icon.png',
+        img: '/wordpress-icon.webp',
         description: "I specialize in building and customizing WordPress websites for businesses, bloggers, and e-commerce stores. From theme customization to plugin integration, I create user-friendly, SEO-optimized, and scalable websites that align with your brand identity and business goals."
     },
 

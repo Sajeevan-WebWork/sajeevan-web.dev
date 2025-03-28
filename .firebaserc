@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "sajeevan-web-dev"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

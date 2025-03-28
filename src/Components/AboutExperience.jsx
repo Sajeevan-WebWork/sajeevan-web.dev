@@ -16,7 +16,7 @@ const AboutExperience = () => {
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col">
                         <small className='text-base font-medium text-theme-400'>2021 - 2023</small>
-                        <h3 className='text-lg font-[600] pt-5 pb-1 capitalize text-theme-200'>designer & developer</h3>
+                        <h3 className='text-lg font-[600] pt-5 pb-1 capitalize text-theme-200'>UI designer & developer</h3>
                         <small className='text-sm font-normal text-theme-300'>Nilaapps</small>
                     </div>
 

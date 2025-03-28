@@ -72,7 +72,7 @@ const ProjectComponent = () => {
               </>
             ) :
               (
-                <img src={"https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?t=st=1742903208~exp=1742906808~hmac=b9be44468e83ac0a4a44e323c693c278782cdc3932ae9bc23f92988096f14f6a&w=740"} alt="Project1" className='rounded-lg h-2/3 w-full object-cover' />
+                <img src={Project1} alt="Project1" className='rounded-lg h-2/3 w-full object-cover' />
               )
           }
         </Swiper>
